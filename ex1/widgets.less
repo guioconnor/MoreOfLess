@@ -1,0 +1,85 @@
+.resetButton() {
+    .appearance(none);
+    .box-sizing(border-box);
+    display: inline-block;
+    text-decoration: none;
+}
+
+.basicButton() {
+    .resetButton();
+    
+}
+
+
+.myButton() {
+    .basicButton();
+    .border-radius(5px);
+    background-color: @publicColor;
+    padding: 10px 30px;
+
+}
+
+.myCheckbox() {
+
+    & + label {
+        .myButton();
+
+        &:before {
+            content: "unchecked";
+        }
+    }
+
+    &:checked + label {
+        background-color: red;
+        &:before {
+            content: "Checked";
+        }
+    }
+
+}
+
+.myRadio() {
+
+}
+
+.privacySwitchButton() {
+    .hide-offscreen();
+
+    & + label {
+        .box-sizing(border-box);
+        .transition(~"background 0.24s, border 0.24s");
+        .border-radius(17px);
+        display: block;
+        height: 30px;
+        width: 60px;
+        border: 2px solid @privateColor;
+        background-color: @privateColor;
+        position: relative;
+
+        text-indent: -999em;
+
+        &:after {
+            background-color: @switchButton;
+            .transition(~"left 0.24s");
+            .border-radius(15px);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    &:checked + label {
+        border-color: @publicColor;
+        background-color: @publicColor;
+        
+        &:after {
+            left: 30px;
+            background-position: -405px -126px;
+        }
+    }
+
+    &:checked + label:after {
+    }
+}

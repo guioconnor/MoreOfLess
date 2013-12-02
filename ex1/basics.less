@@ -1,0 +1,49 @@
+.appearance(@p) {
+    -webkit-appearance: @p;
+       -moz-appearance: @p;
+            appearance: @p;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    color: inherit;
+    font-weight: inherit;
+    font: inherit;
+}
+
+.box-shadow(@p...) {
+    -webkit-box-shadow: @p;
+       -moz-box-shadow: @p;
+            box-shadow: @p;
+}
+
+.transition(@p) {
+    -webkit-transition: @p;
+       -moz-transition: @p;
+            transition: @p;
+}
+
+.box-sizing(@p) {
+    -webkit-box-sizing: @p;
+       -moz-box-sizing: @p;
+            box-sizing: @p;
+}
+
+.border-radius(@n) {
+    -webkit-border-radius: @n;
+       -moz-border-radius: @n;
+            border-radius: @n;
+}
+
+.transform(@p) {
+    -webkit-transform: @p;
+       -moz-transform: @p;
+        -ms-transform: @p;
+         -o-transform: @p;
+            transform: @p;
+}
+
+.hide-offscreen() {
+    position: absolute;
+    left: -999em;
+}

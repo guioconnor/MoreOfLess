@@ -1,0 +1,32 @@
+@l1-borderColor: #ccc;
+@l2-bgcolor: #f8f8f8;
+@l2-borderColor: #ddc;
+@l2-shadowColor: rgba(0, 0, 0, .4);
+
+.layout1() {
+    padding: 50px 150px;
+
+    h1 {
+        text-align: center;
+    }
+
+    section {
+        border: 1px solid @l1-borderColor;
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+.layout2() {
+    padding: 50px 80px;
+
+    section {
+        border: 1px solid @l2-borderColor;
+        padding: 30px 50px;
+        margin-bottom: 30px;
+
+        &:hover {
+            background-color: @l2-bgcolor;
+        }
+    }
+}

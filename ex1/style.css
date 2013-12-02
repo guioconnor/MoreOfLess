@@ -1,0 +1,125 @@
+/*
+ * Basics
+ */
+/*
+ * Layout
+ */
+/*
+ * Typography
+ */
+/*
+ * Widgets
+ */
+/*
+ * Colors
+ */
+/*
+ * Typography
+ */
+body {
+  padding: 50px 80px;
+  font-family: "Helvetica neue", "Arial", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-size: 14px;
+  line-height: 17px;
+}
+body section {
+  border: 1px solid #ddddcc;
+  padding: 30px 50px;
+  margin-bottom: 30px;
+}
+body section:hover {
+  background-color: #f8f8f8;
+}
+#example1 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: inherit;
+  font-weight: inherit;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ea5430;
+  padding: 10px 30px;
+}
+#example2 {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: inherit;
+  font-weight: inherit;
+  font: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #ea5430;
+  padding: 10px 30px;
+}
+#example3 {
+  position: absolute;
+  left: -999em;
+}
+#example3 + label {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: background 0.24s, border 0.24s;
+  -moz-transition: background 0.24s, border 0.24s;
+  transition: background 0.24s, border 0.24s;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  display: block;
+  height: 30px;
+  width: 60px;
+  border: 2px solid #60adb3;
+  background-color: #60adb3;
+  position: relative;
+  text-indent: -999em;
+}
+#example3 + label:after {
+  background-color: #ffffff;
+  -webkit-transition: left 0.24s;
+  -moz-transition: left 0.24s;
+  transition: left 0.24s;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#example3:checked + label {
+  border-color: #ea5430;
+  background-color: #ea5430;
+}
+#example3:checked + label:after {
+  left: 30px;
+  background-position: -405px -126px;
+}
+#example4 {
+  /*.myRadio();*/
+}
